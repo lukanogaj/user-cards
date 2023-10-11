@@ -1,8 +1,8 @@
 // import { useState } from 'react';
 import styles from './index.module.scss';
 import Image from 'next/image';
-// import userImage from '../UserImage';
 import dataForUsers from '../DataForUsers';
+import SocialIcons from '../SocialIcons';
 
 const UserCard = () => {
   // const [isShow, setIsToogle] = (useState = false);
@@ -19,6 +19,8 @@ const UserCard = () => {
           quality={80}
         />
       ))}
+
+      <SocialIcons />
     </div>
   );
 };
