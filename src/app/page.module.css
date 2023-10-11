@@ -5,11 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 } */
+
 .container {
-  /* background-color: blue; */
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center; */
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100vw;
   height: 100vh;
 }
