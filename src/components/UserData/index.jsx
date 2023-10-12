@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './index.module.scss';
+import SocialIcons from '../SocialIcons';
 
 const UserData = () => {
   return (
@@ -11,6 +12,7 @@ const UserData = () => {
       </p>
       <h2>Lee Stewart</h2>
       <h4>Senior Developer</h4>
+      <SocialIcons />
     </div>
   );
 };
