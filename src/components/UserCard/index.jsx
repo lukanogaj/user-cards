@@ -10,19 +10,26 @@ const UserCard = () => {
   return (
     <div className={styles.hero}>
       <div className={styles.flipCard}>
-        {' '}
-        {dataForUsers.map((card) => (
-          <Image
-            className={styles.picture}
-            key={card?.id}
-            src={card.image}
-            alt='card'
-            width={450}
-            height={500}
-            quality={80}
-          />
-        ))}
-        <UserData />
+        <div className={styles.flipCardInner}>
+          <div className={styles.flipCardFront}>
+            {' '}
+            {dataForUsers.map((card) => (
+              <Image
+                className={styles.picture}
+                key={card?.id}
+                src={card.image}
+                alt='card'
+                width={450}
+                height={500}
+                quality={80}
+              />
+            ))}
+          </div>{' '}
+          <div className={styles.flipCardBack}>
+            {' '}
+            <UserData />
+          </div>
+        </div>{' '}
       </div>
     </div>
   );
