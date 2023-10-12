@@ -9,11 +9,11 @@ const UserCard = () => {
   // const [isShow, setIsToogle] = (useState = false);
   return (
     <div className={styles.hero}>
-      <div className={styles.flipCard}>
-        <div className={styles.flipCardInner}>
-          <div className={styles.flipCardFront}>
-            {' '}
-            {dataForUsers.map((card) => (
+      {' '}
+      {dataForUsers.map((card) => (
+        <div key={dataForUsers.id} className={styles.flipCard}>
+          <div key={dataForUsers.id} className={styles.flipCardInner}>
+            <div key={dataForUsers.id} className={styles.flipCardFront}>
               <Image
                 className={styles.picture}
                 key={card?.id}
@@ -23,14 +23,16 @@ const UserCard = () => {
                 height={500}
                 quality={80}
               />
-            ))}
-          </div>{' '}
+            </div>
+          </div>
           <div className={styles.flipCardBack}>
-            {' '}
             <UserData />
           </div>
-        </div>{' '}
-      </div>
+        </div>
+      ))}
+      {/* <div className={styles.flipCardBack}>
+        <UserData />
+      </div> */}
     </div>
   );
 };
