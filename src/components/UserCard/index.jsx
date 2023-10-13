@@ -24,15 +24,12 @@ const UserCard = () => {
                 quality={80}
               />
             </div>
-          </div>
-          <div className={styles.flipCardBack}>
-            <UserData />
+            <div className={styles.flipCardBack}>
+              <UserData />
+            </div>
           </div>
         </div>
       ))}
-      {/* <div className={styles.flipCardBack}>
-        <UserData />
-      </div> */}
     </div>
   );
 };
