@@ -29,5 +29,4 @@ const dataForUsers = [
   },
 ];
 
-console.log(dataForUsers);
 export default dataForUsers;
