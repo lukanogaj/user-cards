@@ -2,18 +2,16 @@
 import styles from './index.module.scss';
 import Image from 'next/image';
 import dataForUsers from '../DataForUsers';
-// import SocialIcons from '../SocialIcons';
 import UserData from '../UserData';
 
 const UserCard = () => {
   // const [isShow, setIsToogle] = (useState = false);
   return (
     <div className={styles.hero}>
-      {' '}
       {dataForUsers.map((card) => (
-        <div key={dataForUsers.id} className={styles.flipCard}>
-          <div key={dataForUsers.id} className={styles.flipCardInner}>
-            <div key={dataForUsers.id} className={styles.flipCardFront}>
+        <div key={card.id} className={styles.flipCard}>
+          <div className={styles.flipCardInner}>
+            <div className={styles.flipCardFront}>
               <Image
                 className={styles.picture}
                 key={card?.id}
@@ -25,7 +23,7 @@ const UserCard = () => {
               />
             </div>
             <div className={styles.flipCardBack}>
-              <UserData />
+              <UserData card={card} />
             </div>
           </div>
         </div>

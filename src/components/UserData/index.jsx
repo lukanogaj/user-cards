@@ -1,17 +1,14 @@
 import React from 'react';
 import styles from './index.module.scss';
 import SocialIcons from '../SocialIcons';
+// import dataForUsers from '../DataForUsers';
 
-const UserData = () => {
+const UserData = ({ card }) => {
   return (
     <div className={styles.userData}>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem ad!
-        Delectus repudiandae totam vitae id laudantium doloribus. Fugiat dolor
-        ad optio amet neque eum velit sit minima aliquid officiis.
-      </p>
-      <h2>Lee Stewart</h2>
-      <h4>Senior Developer</h4>
+      <p>{card.paragraph}</p>
+      <h2>{card.head}</h2>
+      <h4>{card.heading}</h4>
       <SocialIcons />
     </div>
   );
