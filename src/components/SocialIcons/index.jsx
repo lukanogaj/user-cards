@@ -7,14 +7,21 @@ import {
   Nothing,
 } from '../images/media/icons';
 const SocialIcons = () => {
-  console.log(Nothing);
   return (
     <footer className={styles.footer}>
-      <FacebookIcon className={styles.icons} />
-      <LinkedinIcon className={styles.icons} />
-      <EmailIcon className={styles.icons} />
-      <PinterestIcon className={styles.icons} />
-      {/* <Nothing className={styles.icons} /> */}
+      {' '}
+      <div className={styles.icons}>
+        <FacebookIcon />
+      </div>
+      <div className={styles.icons}>
+        <LinkedinIcon />
+      </div>
+      <div className={styles.icons}>
+        <EmailIcon />
+      </div>
+      <div className={styles.icons}>
+        <PinterestIcon />
+      </div>
     </footer>
   );
 };
